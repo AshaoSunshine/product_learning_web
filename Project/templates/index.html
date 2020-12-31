@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}产品教学平台{% endblock title %}
+
+{% block topfiles%}
+	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/slide.js' %}"></script>
+{% endblock topfiles %}
+
+{% block body %}
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl">教学产品</h1>
+		</div>
+	</div>
+	<div class="center_con clearfix">
+		<ul class="subnav fl">
+			<li><a href="#model01" class="fruit">基础版</a></li>
+			<li><a href="#model02" class="seafood">升级版</a></li>
+			<li><a href="#model03" class="meet">完整版</a></li>
+		</ul>
+	<div class="center_con clearfix">
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+	</div>
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model01">基础版</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="{% url 'productview:product_intro' %}">产品中心</a>
+				<a href="{% url 'productview:product_param' %}">产品配置参数</a>
+			</div>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="{% static 'images/product_02.jpeg' %}"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="static/images/product_01.jpg"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="{% static 'images/product_02.jpeg' %}"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="static/images/product_01.jpg"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="{% static 'images/product_02.jpeg' %}"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model02">升级版</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="{% url 'productview:product_intro' %}">产品中心</a>
+				<a href="{% url 'productview:product_param' %}">产品配置参数</a>
+			</div>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="static/images/product_01.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="{% static 'images/product_02.jpeg' %}"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="static/images/product_01.jpg"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="{% static 'images/product_02.jpeg' %}"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="static/images/product_01.jpg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model03">完整版</h3>
+			<div class="subtitle fl">
+				<span>|</span>
+				<a href="{% url 'productview:product_intro' %}">产品中心</a>
+				<a href="{% url 'productview:product_param' %}">产品配置参数</a>
+			</div>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="static/images/product_01.jpg"></div>
+			<ul class="goods_list fl">
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="{% static 'images/product_02.jpeg' %}"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="static/images/product_01.jpg"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="{% static 'images/product_02.jpeg' %}"></a>
+				</li>
+				<li>
+					<h4><a href="#">产品1</a></h4>
+					<a href="#"><img src="static/images/product_01.jpg"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock body %}

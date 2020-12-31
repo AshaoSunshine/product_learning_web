@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title%}产品中心{% endblock title%}
+
+{% block topfiles%}
+	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/slide.js' %}"></script>
+{% endblock topfiles %}
+
+{% block body %}
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl">产品中心</h1>
+		</div>
+	</div>
+
+	<div class="center_con clearfix">
+		<ul class="subnav fl">
+			<li><a href="#model01" class="fruit">界面&视频</a></li>
+			<li><a href="#model02" class="seafood">逻辑模块</a></li>
+			<li><a href="#model03" class="meet">成本核算</a></li>
+			<li><a href="#model04" class="meet">技术支持文档</a></li>
+		</ul>
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+	</div>
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model01">界面&视频</h3>
+		</div>
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="static/images/product_01.jpg"></div>
+			<video width="320" height="240" controls>
+			  <source src="movie.mp4" type="video/mp4">
+			  <source src="movie.ogg" type="video/ogg">
+			  <source src="movie.webm" type="video/webm">
+			  <object data="movie.mp4" width="500" height="300">
+				<embed src="{% static 'images/product_04.mov' %}" width="5000" height="3000">
+			  </object>
+			</video>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model02">逻辑模块</h3>
+		</div>
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="{% static 'images/product_05.jpg' %}"></div>
+		</div>
+	</div>
+
+	<div class="list_model_b">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model03">成本核算</h3>
+		</div>
+		<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>硬件成本</caption>
+		  <tr>
+			<th>硬件名称</th><th>硬件型号</th><th>数量</th><th>单价（万）</th><th>总价（万）</th><th>二次使用</th><th>二次使用价格（万）</th><th>推荐供应商1</th><th>推荐供应商2</th><th>推荐供应商3</th>
+		  </tr>
+			<tr>
+			<td>January</td><td>$100</td>
+		  </tr>
+		  <tr>
+			<td>January</td><td>$100</td>
+		  </tr>
+		</table>
+		<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>软件成本</caption>
+		  <tr>
+			<th>软件名称</th><th>主要内容</th><th>数量</th><th>单价（万）</th><th>总价（万）</th><th>二次使用</th><th>二次使用价格（万）</th><th>推荐供应商1</th><th>推荐供应商2</th><th>推荐供应商3</th>
+		  </tr>
+			<tr>
+			<td>January</td><td>$100</td>
+		  </tr>
+		  <tr>
+			<td>January</td><td>$100</td>
+		  </tr>
+		</table>
+		<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>产品售价</caption>
+		  <tr>
+			<th>版本</th><th>硬件成本（万）</th><th>首次软件成本（万）</th><th>开发周期（天）</th><th>单次硬性成本（万）</th><th>单次软件成本（万）</th><th>单次成本合计（万）</th><th>批量成本合计（万）</th><th>成本比例</th>
+		  </tr>
+			<tr>
+			<td>January</td><td>$100</td>
+		  </tr>
+			 <tr>
+			<th>实际对外</th><th>代理比例</th><th>利润分成</th><th>对外利润</th><th>实际利润</th><th>利润要求</th><th>产品售价</th><th>实际利润率</th><th>对外利润率</th>
+		  </tr>
+		  <tr>
+			<td>January</td><td>$100</td>
+		  </tr>
+		</table>
+	</div>
+
+	<div class="list_model_d">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model04">技术支持文档</h3>
+		</div>
+		<table  border="4" cellpadding="10">
+			<caption>&nbsp;</caption>
+			<tr>
+				<td>三维结构</td><td>激光雷达实训台架</td><td>日期</td><td>格式</td><td><a href="#">下载</a></td>
+		  </tr>
+		  <tr>
+			<td>产品手册</td><td>激光雷达教学实训台架实训工单-基础款</td><td>日期</td><td>格式</td><td><a href="#">下载</a></td>
+		  </tr>
+		</table>
+		</div>
+
+{% endblock body %}

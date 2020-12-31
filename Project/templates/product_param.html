@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{%  block title %}产品配置参数{% endblock title %}
+
+{% block topfiles%}
+	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-ui.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/slide.js' %}"></script>
+{% endblock topfiles %}
+
+{% block body %}
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl">教学产品</h1>
+		</div>
+	</div>
+
+	<div class="center_con clearfix">
+		<ul class="subnav fl">
+			<li><a href="#model01" class="fruit">基础参数</a></li>
+			<li><a href="#model02" class="seafood">16线激光雷达</a></li>
+			<li><a href="#model03" class="meet">线控底盘</a></li>
+			<li><a href="#model04" class="meet">处理器</a></li>
+		</ul>
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+				<li><img src="{% static 'images/product_01.jpg' %}" alt="产品1"></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+	</div>
+
+	<div class="list_model_a">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model01">基础参数</h3>
+		</div>
+		<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>&nbsp;&nbsp;</caption>
+		  <tr>
+			<th>名称</th><th>参数</th>
+		  </tr>
+			<tr>
+			<td>设备简介</td><td>基础班激光雷达教学实训平台主要由台架、16线激光雷达、线控底盘、AGX、显示屏等设备组成，
+				以激光雷达原理教学、构造教学（动画）、安装调试、目标检测、故障检测、自动驾驶应用为教学实训内容，具有11种功能及20余项实训项目，能够使学生由浅入深、掌握激光雷达应用于自动驾驶的基本知识。</td>
+		  </tr>
+		  <tr>
+			<td>设备功能</td><td>
+			  <ol start="1">
+				  <li>1.了解激光雷达的工作原理；</li>
+				  <li>2.了解激光雷达的内部构造；</li>
+				  <li>3.了解单线激光雷达和多线激光雷达的区别；</li>
+				  <li>4.了解激光雷达国内外的主要品牌；</li>
+				  <li>5.了解激光雷达在自动驾驶中的应用；</li>
+				  <li>6.能够进行激光雷达的拆装演示及操作；</li>
+				  <li>7.能够进行激光雷达的标定演示及操作；</li>
+				  <li>8.能够使用激光雷达进行目标检测与分类；</li>
+				  <li>9.能够设置激光雷达模块故障，并提供检测方法；</li>
+				  <li>10.能够使用激光雷达进行自动驾驶停障测试；</li>
+				  <li>11.能够使用激光雷达进行自动驾驶避障测试；</li>
+				</ol></td>
+		  </tr>
+			<tr>
+			<td>实训目标</td><td>
+				<ol>
+				  <li>1.激光雷达设备的拆装，包括连接线束、选择安装位置、调整安装倾斜角等内容；</li>
+				  <li>2.激光雷达的角度标定；</li>
+				  <li>3.激光雷达参数调节，包括16线激光雷达线束数据的筛选、检测距离的设置、角度的调节等3项内容；</li>
+				  <li>4.激光雷达模块故障检测，包括通讯故障、电源故障，设备故障，IP错误等4类故障形式；</li>
+				  <li>5.使用16线激光雷达进行目标检测和分类；</li>
+				  <li>6.使用线控底盘搭载激光雷达进行停避障测试；</li></ol></td>
+		  </tr>
+		</table>
+	</div>
+
+	<div class="list_model_b">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model02">16线激光雷达</h3>
+		</div>
+		<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>&nbsp;</caption>
+		  <tr>
+			<th>名称</th><th>参数</th>
+		  </tr>
+			<tr>
+				<td>传感器</td><td>
+				<ol>
+				<li>TOF法测距16通道</li>
+				<li>测距：20cm至150米（目标反射率20%）</li>
+				<li>精度：+/-2cm（典型值）</li>
+				<li>视角（垂直）：±15°(共30°)</li>
+				<li>角分辨率（垂直）：2°</li>
+				<li>视角（水平）：360°</li>
+				<li>角分辨率（水平/方位角）：0.09°（5Hz）至0.36°（20Hz）</li>
+				<li>转速：300/600/1200rpm(5/10/20Hz)</li>
+		    	</ol></td>
+		  </tr>
+		  <tr>
+			<td>激光</td><td><ol>
+				<li>Class 1</li>
+			    <li>波长：905nm</li>
+			    <li>激光发射角：水平3mrad,垂直1.2mrad</li>
+			</ol></td>
+		  </tr>
+			<tr>
+			<td>输出</td><td><ol>
+				<li>320k 点/秒</li>
+				<li>百兆以太网</li>
+				<li>UDP包中包含</li>
+				<li>距离信息</li>
+				<li>旋转角度信息</li>
+				<li>经校准的反射率信息</li>
+				<li>同步的时间标签（分辨率1us）</li>
+			</ol></td>
+		  </tr>
+			<tr>
+			<td>机械/电子操作</td><td><ol>
+				<li>功耗：9w（典型值）</li>
+				<li>工作电压：12VDC（带接口盒，稳定电压），9-32VDC</li>
+				<li>重量：0.840kg（不包含数据线）</li>
+				<li>尺寸：直径109mm*高82.7mm</li>
+				<li>防护安全级别：IP67</li>
+				<li>工作温度范围：10°C～60°C</li>
+			</ol></td>
+		  </tr>
+			<tr>
+			<td>其他</td><td><ol>
+				<li>防护安全级别：IP67</li>
+				<li>操作温度：-30°C～+60°C</li>
+				<li>规格：H：82.7mm * ψ:109mm</li>
+				<li>重量：0.84kg(不包含数据线)</li>
+				<li>采集数据：三维空间坐标、反射率</li>
+			</ol></td>
+		  </tr>
+		</table>
+	</div>
+
+	<div class="list_model_c">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model03">线控底盘</h3>
+		</div>
+		<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>&nbsp;</caption>
+		  <tr>
+			<th>名称</th><th>参数</th>
+		  </tr>
+			<tr>
+			<td>整车信息</td><td><ol>
+				<li>主要材质:Q235，防腐蚀喷漆</li>
+				<li>设计尺寸：519*431*320mm</li>
+				<li>底盘结构：承载式车身</li>
+				<li>整车质量： 40kg</li>
+				<li>轮距：431mm</li>
+				<li>轴距：260mm</li>
+				<li>底盘离地间隙：62.5mm</li>
+				<li>使用温度：-20°C～40°C</li>
+				<li>防护级别：IP56</li>
+			</ol></td>
+		  </tr>
+		  <tr>
+			<td>底盘性能</td><td><ol>
+				<li>负载能力：25kg</li>
+				<li>运行速度：0-1.5m/s</li>
+				<li>最大跨越：80mm</li>
+				<li>最大越障：50mm</li>
+				<li>最大爬坡角度：30°</li>
+			    <li>转弯半径：0</li>
+			</ol></td>
+		  </tr>
+		  <tr>
+			<td>驱动系统</td><td><ol>
+				<li>驱动方式：差动</li>
+				<li>制动方式：电机反向制动</li>
+				<li>电机类型：直流无刷电机</li>
+				<li>单个电机功率：200W</li>
+				<li>电机工作电压：48V</li>
+			    <li>电机数量：2</li>
+				<li>预留控制接口类型：can/232</li>
+			</ol></td>
+		  </tr>
+		  <tr>
+			<td>电源及管理</td><td><ol>
+				<li>电池容量：20AH</li>
+				<li>电池类型：三元锂电池</li>
+				<li>电池额定电压：48V</li>
+				<li>电池通讯接口：485</li>
+			</ol></td>
+		  </tr>
+		</table>
+	</div>
+
+	<div class="list_model_e">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model04">处理器</h3>
+		</div>
+			<table wight="400"   height= "200" border="4" cellpadding="10">
+			<caption>&nbsp;</caption>
+		  <tr>
+			<th>名称</th><th>参数</th>
+		  </tr>
+			<tr>
+			<td>GPU</td><td><ol>
+				<li>512核Volta GPU（具有64个Tensor核心）</li>
+				<li>11TFLOPS（FP16）</li>
+				<li>22TOPS（INT8）</li>
+			</ol></td>
+		  </tr>
+		</table>
+	</div>
+{% endblock body %}
